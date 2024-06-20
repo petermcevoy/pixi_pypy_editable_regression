@@ -1,0 +1,15 @@
+[project]
+name = "pixi_pypy_editable"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Example <example@example.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64"]
+
+[tasks]
+
+[dependencies]
+python = ">=3.12.4,<3.13"
+
+[pypi-dependencies]
+example_package = { path = "./example_package", editable = true }
